@@ -1,0 +1,150 @@
+body{
+    background-color: white;
+}
+
+#baku-descr.container{
+    box-shadow: #1B4D3E;
+    border-color: none;
+}
+
+h2{
+    text-align: center;
+}
+
+#facts{
+    margin: 60px auto 30px auto;
+}
+.facts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#about-us{
+    margin-top: 50px;
+}
+div.featurette{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.featurette img{
+    border-radius: 20px;
+}
+
+.company-name{
+    color: #690B22;
+}
+span{
+    color: #1B4D3E;
+}
+
+.nav-item a{
+    color: #332D56 !important;
+    border: 1px solid white;
+}
+li .active{
+    background-color: #332D56 !important;
+    color: white !important;
+}
+li .active:hover{
+    background-color: white !important;
+    color: #332D56 !important;
+    border:1px solid #332D56 !important;
+}
+
+.card{
+    background-color: white;
+}
+.contact-us{
+    color: #332D56;
+}
+.card-title{
+    color: #332D56;
+}
+#about-us h2{
+    color: #332D56;
+}
+
+.carousel-inner img{
+    border-radius: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.package-card{
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    width: 18%;
+    height: 300px;
+    text-align: center;
+}
+.package-card:hover{
+    box-shadow: 0 5px 8px grey;
+}
+.culture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(history.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+}
+.events{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(events.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+}
+.entertainment{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(entertaiment.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+}
+.restaurants{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url(restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    #about-us img {
+        width: 100%;
+    }
+    .who-we-are img{
+        height: 200px;
+    }
+    .mission-img{
+        height: 350px;
+    }
+    .we-offer{
+        height: 400px;
+    }
+    .why-us-img{
+        height: 350px;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 4px;
+    }
+    .package-card{
+        width: 80%;
+        height: 200px;
+    }
+}
